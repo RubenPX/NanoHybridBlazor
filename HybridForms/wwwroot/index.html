@@ -8,20 +8,31 @@
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
     <link href="WinFormsBlazor.styles.css" rel="stylesheet" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
 </head>
 
 <body>
-
-    <div id="app">Loading...</div>
+    <div class="container">
+        <div class="console">
+            <div class="console-head">
+                <div class="console-title">Ta wapo ehh 😎</div>
+                <div class="console-actions">
+                    <div class="console-action console-action-min"><span class="fa fa-caret-down"></span></div>
+                    <div class="console-action console-action-max"><span class="fa fa-arrows-alt"></span></div>
+                    <div class="console-action console-action-close"><span class="fa fa-close"></span></div>
+                </div>
+            </div>
+            <div class="console-body" id="app">Loading...</div>
+        </div>
+    </div>
 
     <div id="blazor-error-ui" data-nosnippet>
         An unhandled error has occurred.
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
     </div>
-
     <script src="_framework/blazor.webview.js"></script>
-
 </body>
 
 </html>

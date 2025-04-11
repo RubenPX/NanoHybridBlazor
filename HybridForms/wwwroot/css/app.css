@@ -1,9 +1,19 @@
-﻿html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+﻿html {
+    box-sizing: border-box;
 }
 
-h1:focus {
-    outline: none;
+html, body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 a, .btn-link {
@@ -46,3 +56,68 @@ a, .btn-link {
     right: 0.75rem;
     top: 0.5rem;
 }
+
+/* CONSOLE */
+
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.console {
+    height: 100vh;
+    width: 100vw;
+    border: 4px solid #bbb;
+}
+
+.console .console-body {
+    padding: 10px;
+}
+
+.console .console-head {
+    height: 24px;
+    background-color: #bbb;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 4px solid #bbb;
+}
+
+.console .console-head .console-title {
+    font-weight: 600;
+    color: #222;
+}
+
+.console .console-head .console-actions {
+    display: flex;
+    justify-content: space-around;
+}
+
+.console .console-head .console-actions .console-action {
+    margin-left: 4px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    color: #222;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.console .console-head .console-actions .console-action .fa {
+    line-height: 20px;
+}
+
+.console .console-head .console-actions .console-action.console-action-min {
+    background-color: #eeee73;
+    cursor: pointer;
+}
+
+.console .console-head .console-actions .console-action.console-action-max {
+    background-color: #bee07e;
+    cursor: pointer;
+}
+
+.console .console-head .console-actions .console-action.console-action-close {
+    background-color: #e08d8d;
+    cursor: pointer;
+}
+
